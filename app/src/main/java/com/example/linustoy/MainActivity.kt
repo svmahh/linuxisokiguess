@@ -20,6 +20,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var backward: Button
     private lateinit var leftbtn:Button
     private lateinit var rightbtn:Button
+    private lateinit var leftforbtn:Button
+    private lateinit var rightforbtn:Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +33,8 @@ class MainActivity : AppCompatActivity() {
         backward = findViewById(R.id.btnBackwards)
         leftbtn = findViewById(R.id.btnLeft)
         rightbtn = findViewById(R.id.btnRight)
+        leftforbtn = findViewById(R.id.btnLeftFor)
+        rightforbtn = findViewById(R.id.btnRightFor)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -42,7 +46,7 @@ class MainActivity : AppCompatActivity() {
         hootbtn.setOnClickListener{
             Log.e("MainActivity", "Hoot Button pressed") // Log button press
 
-            val url = "http://192.168.4.1/weg;jbfeW;HOUBwfe;buiowfe"
+            val url = "http://192.168.4.1/GAY"
 
             // Send the HTTP request
             sendHttpRequest(url)
@@ -79,6 +83,24 @@ class MainActivity : AppCompatActivity() {
             Log.e("MainActivity", "Right Button pressed") // Log button press
 
             val url = "http://192.168.4.1/right"
+
+            // Send the HTTP request
+            sendHttpRequest(url)
+        }
+
+        leftforbtn.setOnClickListener{
+            Log.e("MainActivity", "Right Button pressed") // Log button press
+
+            val url = "http://192.168.4.1/LeftRight"
+
+            // Send the HTTP request
+            sendHttpRequest(url)
+        }
+
+        rightforbtn.setOnClickListener{
+            Log.e("MainActivity", "Right Button pressed") // Log button press
+
+            val url = "http://192.168.4.1/rightLeft"
 
             // Send the HTTP request
             sendHttpRequest(url)

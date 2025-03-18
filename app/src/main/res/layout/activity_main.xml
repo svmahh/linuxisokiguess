@@ -8,25 +8,51 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/btnRightFor"
+        android:layout_width="86dp"
+        android:layout_height="92dp"
+        android:text="↗️"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.864"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.225" />
+
+    <Button
+        android:id="@+id/btnLeftFor"
+        android:layout_width="86dp"
+        android:layout_height="92dp"
+        android:text="↖️"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.225" />
+
+    <Button
         android:id="@+id/btnLeft"
         android:layout_width="86dp"
         android:layout_height="92dp"
-        android:layout_marginTop="271dp"
         android:layout_marginEnd="59dp"
-        android:layout_marginBottom="368dp"
-        android:text="⬅"
+        android:text="⬅️"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.424" />
 
     <Button
         android:id="@+id/btnRight"
         android:layout_width="86dp"
         android:layout_height="92dp"
-        android:text="➡"
+        android:text="➡️"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.95"
@@ -38,19 +64,21 @@
         android:id="@+id/btnBackwards"
         android:layout_width="86dp"
         android:layout_height="92dp"
-        android:text="⬇"
+        android:text="⬇️"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.707" />
+        app:layout_constraintVertical_bias="0.613" />
 
     <Button
         android:id="@+id/btnForwards"
         android:layout_width="86dp"
         android:layout_height="92dp"
-        android:text="⬆"
+        android:text="⬆️"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -62,11 +90,12 @@
         android:id="@+id/btnHoot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hoot"
+        android:text="Gay👍"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.427" />
+        app:layout_constraintVertical_bias="0.396" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
